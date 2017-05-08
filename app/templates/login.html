@@ -1,4 +1,4 @@
-<ion-view id="Login" hide-nav-bar="true">
+<ion-view id="Login" hide-nav-bar="false">
     <ion-content padding="true" scroll="false">
         <form>
             <div class="row responsive-md">
@@ -11,28 +11,28 @@
                     <div>
                         <label class="item item-input"
                         style="border-color: #322F42;background-color: #322F42;color: #fff;" >
-                            <input style="border-color: #322F42;background-color: #322F42;color: #fff;" type="email" placeholder="Email">
+                            <input  style="border-color: #322F42;background-color: #322F42;color: #fff;" type="email" ng-model="user.email">
                         </label>
                         <label class="item item-input"
                         style="border-color: #322F42;background-color: #322F42;color: #fff;">
-                            <input style="border-color: #322F42;background-color: #322F42;color: #fff;" type="password" placeholder="Password">
+                            <input style="border-color: #322F42;background-color: #322F42;color: #fff;" type="password"  ng-model="user.password">
                         </label>
 
-                    <button class="button button-block button-login" ng-click="login">
+                    <button class="button button-block button-login" ng-click="login()">
                         Log In
                     </button>
                   </div>
 
                     <div class="row row-no-padding">
                         <div class="col">
-                            <button class="button button-clear button-light">
-                                Forgot password?
+                            <button class="button button-clear button-light" ng-click="forgotPassword()">
+                                Forgot password ?
                             </button>
                         </div>
 
                         <div class="col text-right">
-                            <button class="button button-clear button-light">
-                                Sign up
+                            <button class="button button-clear button-light" ng-click="signUp()">
+                                Sign Up
                             </button>
                         </div>
                     </div>

@@ -13,7 +13,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
 (function(window, angular, undefined) {
   'use strict';
 
-  var urlBase = "http://localhost:5000/api";
+  var urlBase = "https://strong-loop-code.herokuapp.com/api";
   var authHeader = 'authorization';
 
   function getHost(url) {

@@ -2,7 +2,9 @@
   "name": "MyFirstApp",
   "version": "0.0.0",
   "private": true,
-  "dependencies": {},
+  "dependencies": {
+    "lodash._baseslice": "^4.0.0"
+  },
   "devDependencies": {
     "grunt": "~0.4.5",
     "glob": "~4.3.5",
@@ -58,6 +60,7 @@
     "ionic-plugin-keyboard",
     "cordova-plugin-console",
     "cordova-plugin-fonts",
-    "cordova-plugin-camera"
+    "cordova-plugin-camera",
+    "cordova-plugin-whitelist"
   ]
 }
