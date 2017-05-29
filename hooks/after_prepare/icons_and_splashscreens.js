@@ -20,7 +20,7 @@ var Orchestrator = require('orchestrator');
 
 var BASES = {
   android: 'res',
-  ios: 'MyFirstApp/Resources',
+  ios: 'RoomBudgetManager/Resources',
   browser: 'www/images'
 };
 var RESOURCE_DIR = 'resources';

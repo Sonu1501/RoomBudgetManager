@@ -3,22 +3,15 @@ angular.module('app.routes', [])
 .config(function($stateProvider, $urlRouterProvider) {
 
   $stateProvider
-    .state('main', {
-      url: '/main',
-      templateUrl: 'templates/main.html',
-      controller: 'autologinCtrl'
+    .state('landingPage', {
+      url: '/landingPage',
+      templateUrl: 'templates/landingPage.html',
+      controller: 'landingPageCtrl'
     })
     .state('login', {
       url: '/login',
       templateUrl: 'templates/login.html',
       controller: 'loginCtrl'
-
-  		// resolve:{
-  		// 	"check":function($location){
-  		// 		if(sessionStorage.getItem('loggedin_id')){ $location.path('/page9');   }
-  		// 		else									 {  $location.path('/login');   }
-  		// 	}
-  		// }
     })
     .state('home', {
       url: '/home',
@@ -37,6 +30,6 @@ angular.module('app.routes', [])
     });
 
   // if none of the above states are matched, use this as the fallback
-  $urlRouterProvider.otherwise('/main');
+  $urlRouterProvider.otherwise('/landingPage');
 
 });

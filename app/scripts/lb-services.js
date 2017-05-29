@@ -37,13 +37,13 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
 
 /**
  * @ngdoc object
- * @name lbServices.Mstusers
- * @header lbServices.Mstusers
+ * @name lbServices.MstUsers
+ * @header lbServices.MstUsers
  * @object
  *
  * @description
  *
- * A $resource object for interacting with the `Mstusers` model.
+ * A $resource object for interacting with the `MstUsers` model.
  *
  * ## Example
  *
@@ -53,19 +53,19 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
  *
  */
   module.factory(
-    "Mstusers",
+    "MstUsers",
     [
       'LoopBackResource', 'LoopBackAuth', '$injector', '$q',
       function(LoopBackResource, LoopBackAuth, $injector, $q) {
         var R = LoopBackResource(
-        urlBase + "/Mstusers/:id",
+        urlBase + "/MstUsers/:id",
           { 'id': '@id' },
           {
 
             /**
              * @ngdoc method
-             * @name lbServices.Mstusers#prototype$__findById__accessTokens
-             * @methodOf lbServices.Mstusers
+             * @name lbServices.MstUsers#prototype$__findById__accessTokens
+             * @methodOf lbServices.MstUsers
              *
              * @description
              *
@@ -73,7 +73,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - Mstusers id
+             *  - `id` – `{*}` - MstUsers id
              *
              *  - `fk` – `{*}` - Foreign key for accessTokens
              *
@@ -89,21 +89,21 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * <em>
              * (The remote method definition does not provide any description.
-             * This usually means the response is a `Mstusers` object.)
+             * This usually means the response is a `MstUsers` object.)
              * </em>
              */
             "prototype$__findById__accessTokens": {
               params: {
                 'fk': '@fk',
               },
-              url: urlBase + "/Mstusers/:id/accessTokens/:fk",
+              url: urlBase + "/MstUsers/:id/accessTokens/:fk",
               method: "GET",
             },
 
             /**
              * @ngdoc method
-             * @name lbServices.Mstusers#prototype$__destroyById__accessTokens
-             * @methodOf lbServices.Mstusers
+             * @name lbServices.MstUsers#prototype$__destroyById__accessTokens
+             * @methodOf lbServices.MstUsers
              *
              * @description
              *
@@ -111,7 +111,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - Mstusers id
+             *  - `id` – `{*}` - MstUsers id
              *
              *  - `fk` – `{*}` - Foreign key for accessTokens
              *
@@ -131,14 +131,14 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
               params: {
                 'fk': '@fk',
               },
-              url: urlBase + "/Mstusers/:id/accessTokens/:fk",
+              url: urlBase + "/MstUsers/:id/accessTokens/:fk",
               method: "DELETE",
             },
 
             /**
              * @ngdoc method
-             * @name lbServices.Mstusers#prototype$__updateById__accessTokens
-             * @methodOf lbServices.Mstusers
+             * @name lbServices.MstUsers#prototype$__updateById__accessTokens
+             * @methodOf lbServices.MstUsers
              *
              * @description
              *
@@ -146,7 +146,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - Mstusers id
+             *  - `id` – `{*}` - MstUsers id
              *
              *  - `fk` – `{*}` - Foreign key for accessTokens
              *
@@ -166,29 +166,29 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * <em>
              * (The remote method definition does not provide any description.
-             * This usually means the response is a `Mstusers` object.)
+             * This usually means the response is a `MstUsers` object.)
              * </em>
              */
             "prototype$__updateById__accessTokens": {
               params: {
                 'fk': '@fk',
               },
-              url: urlBase + "/Mstusers/:id/accessTokens/:fk",
+              url: urlBase + "/MstUsers/:id/accessTokens/:fk",
               method: "PUT",
             },
 
             /**
              * @ngdoc method
-             * @name lbServices.Mstusers#prototype$__get__accessTokens
-             * @methodOf lbServices.Mstusers
+             * @name lbServices.MstUsers#prototype$__get__accessTokens
+             * @methodOf lbServices.MstUsers
              *
              * @description
              *
-             * Queries accessTokens of Mstusers.
+             * Queries accessTokens of MstUsers.
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - Mstusers id
+             *  - `id` – `{*}` - MstUsers id
              *
              *  - `filter` – `{object=}` -
              *
@@ -204,19 +204,19 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * <em>
              * (The remote method definition does not provide any description.
-             * This usually means the response is a `Mstusers` object.)
+             * This usually means the response is a `MstUsers` object.)
              * </em>
              */
             "prototype$__get__accessTokens": {
               isArray: true,
-              url: urlBase + "/Mstusers/:id/accessTokens",
+              url: urlBase + "/MstUsers/:id/accessTokens",
               method: "GET",
             },
 
             /**
              * @ngdoc method
-             * @name lbServices.Mstusers#prototype$__create__accessTokens
-             * @methodOf lbServices.Mstusers
+             * @name lbServices.MstUsers#prototype$__create__accessTokens
+             * @methodOf lbServices.MstUsers
              *
              * @description
              *
@@ -224,7 +224,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - Mstusers id
+             *  - `id` – `{*}` - MstUsers id
              *
              * @param {Object} postData Request data.
              *
@@ -242,18 +242,18 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * <em>
              * (The remote method definition does not provide any description.
-             * This usually means the response is a `Mstusers` object.)
+             * This usually means the response is a `MstUsers` object.)
              * </em>
              */
             "prototype$__create__accessTokens": {
-              url: urlBase + "/Mstusers/:id/accessTokens",
+              url: urlBase + "/MstUsers/:id/accessTokens",
               method: "POST",
             },
 
             /**
              * @ngdoc method
-             * @name lbServices.Mstusers#prototype$__delete__accessTokens
-             * @methodOf lbServices.Mstusers
+             * @name lbServices.MstUsers#prototype$__delete__accessTokens
+             * @methodOf lbServices.MstUsers
              *
              * @description
              *
@@ -261,7 +261,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - Mstusers id
+             *  - `id` – `{*}` - MstUsers id
              *
              *  - `where` – `{object=}` -
              *
@@ -278,22 +278,22 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              * This method returns no data.
              */
             "prototype$__delete__accessTokens": {
-              url: urlBase + "/Mstusers/:id/accessTokens",
+              url: urlBase + "/MstUsers/:id/accessTokens",
               method: "DELETE",
             },
 
             /**
              * @ngdoc method
-             * @name lbServices.Mstusers#prototype$__count__accessTokens
-             * @methodOf lbServices.Mstusers
+             * @name lbServices.MstUsers#prototype$__count__accessTokens
+             * @methodOf lbServices.MstUsers
              *
              * @description
              *
-             * Counts accessTokens of Mstusers.
+             * Counts accessTokens of MstUsers.
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - Mstusers id
+             *  - `id` – `{*}` - MstUsers id
              *
              *  - `where` – `{object=}` - Criteria to match model instances
              *
@@ -312,14 +312,14 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *  - `count` – `{number=}` -
              */
             "prototype$__count__accessTokens": {
-              url: urlBase + "/Mstusers/:id/accessTokens/count",
+              url: urlBase + "/MstUsers/:id/accessTokens/count",
               method: "GET",
             },
 
             /**
              * @ngdoc method
-             * @name lbServices.Mstusers#create
-             * @methodOf lbServices.Mstusers
+             * @name lbServices.MstUsers#create
+             * @methodOf lbServices.MstUsers
              *
              * @description
              *
@@ -346,18 +346,18 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * <em>
              * (The remote method definition does not provide any description.
-             * This usually means the response is a `Mstusers` object.)
+             * This usually means the response is a `MstUsers` object.)
              * </em>
              */
             "create": {
-              url: urlBase + "/Mstusers",
+              url: urlBase + "/MstUsers",
               method: "POST",
             },
 
             /**
              * @ngdoc method
-             * @name lbServices.Mstusers#createMany
-             * @methodOf lbServices.Mstusers
+             * @name lbServices.MstUsers#createMany
+             * @methodOf lbServices.MstUsers
              *
              * @description
              *
@@ -384,19 +384,19 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * <em>
              * (The remote method definition does not provide any description.
-             * This usually means the response is a `Mstusers` object.)
+             * This usually means the response is a `MstUsers` object.)
              * </em>
              */
             "createMany": {
               isArray: true,
-              url: urlBase + "/Mstusers",
+              url: urlBase + "/MstUsers",
               method: "POST",
             },
 
             /**
              * @ngdoc method
-             * @name lbServices.Mstusers#upsert
-             * @methodOf lbServices.Mstusers
+             * @name lbServices.MstUsers#upsert
+             * @methodOf lbServices.MstUsers
              *
              * @description
              *
@@ -423,18 +423,18 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * <em>
              * (The remote method definition does not provide any description.
-             * This usually means the response is a `Mstusers` object.)
+             * This usually means the response is a `MstUsers` object.)
              * </em>
              */
             "upsert": {
-              url: urlBase + "/Mstusers",
+              url: urlBase + "/MstUsers",
               method: "PUT",
             },
 
             /**
              * @ngdoc method
-             * @name lbServices.Mstusers#replaceOrCreate
-             * @methodOf lbServices.Mstusers
+             * @name lbServices.MstUsers#replaceOrCreate
+             * @methodOf lbServices.MstUsers
              *
              * @description
              *
@@ -461,18 +461,18 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * <em>
              * (The remote method definition does not provide any description.
-             * This usually means the response is a `Mstusers` object.)
+             * This usually means the response is a `MstUsers` object.)
              * </em>
              */
             "replaceOrCreate": {
-              url: urlBase + "/Mstusers/replaceOrCreate",
+              url: urlBase + "/MstUsers/replaceOrCreate",
               method: "POST",
             },
 
             /**
              * @ngdoc method
-             * @name lbServices.Mstusers#upsertWithWhere
-             * @methodOf lbServices.Mstusers
+             * @name lbServices.MstUsers#upsertWithWhere
+             * @methodOf lbServices.MstUsers
              *
              * @description
              *
@@ -498,18 +498,18 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * <em>
              * (The remote method definition does not provide any description.
-             * This usually means the response is a `Mstusers` object.)
+             * This usually means the response is a `MstUsers` object.)
              * </em>
              */
             "upsertWithWhere": {
-              url: urlBase + "/Mstusers/upsertWithWhere",
+              url: urlBase + "/MstUsers/upsertWithWhere",
               method: "POST",
             },
 
             /**
              * @ngdoc method
-             * @name lbServices.Mstusers#exists
-             * @methodOf lbServices.Mstusers
+             * @name lbServices.MstUsers#exists
+             * @methodOf lbServices.MstUsers
              *
              * @description
              *
@@ -534,14 +534,14 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *  - `exists` – `{boolean=}` -
              */
             "exists": {
-              url: urlBase + "/Mstusers/:id/exists",
+              url: urlBase + "/MstUsers/:id/exists",
               method: "GET",
             },
 
             /**
              * @ngdoc method
-             * @name lbServices.Mstusers#findById
-             * @methodOf lbServices.Mstusers
+             * @name lbServices.MstUsers#findById
+             * @methodOf lbServices.MstUsers
              *
              * @description
              *
@@ -565,18 +565,18 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * <em>
              * (The remote method definition does not provide any description.
-             * This usually means the response is a `Mstusers` object.)
+             * This usually means the response is a `MstUsers` object.)
              * </em>
              */
             "findById": {
-              url: urlBase + "/Mstusers/:id",
+              url: urlBase + "/MstUsers/:id",
               method: "GET",
             },
 
             /**
              * @ngdoc method
-             * @name lbServices.Mstusers#replaceById
-             * @methodOf lbServices.Mstusers
+             * @name lbServices.MstUsers#replaceById
+             * @methodOf lbServices.MstUsers
              *
              * @description
              *
@@ -602,18 +602,18 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * <em>
              * (The remote method definition does not provide any description.
-             * This usually means the response is a `Mstusers` object.)
+             * This usually means the response is a `MstUsers` object.)
              * </em>
              */
             "replaceById": {
-              url: urlBase + "/Mstusers/:id/replace",
+              url: urlBase + "/MstUsers/:id/replace",
               method: "POST",
             },
 
             /**
              * @ngdoc method
-             * @name lbServices.Mstusers#find
-             * @methodOf lbServices.Mstusers
+             * @name lbServices.MstUsers#find
+             * @methodOf lbServices.MstUsers
              *
              * @description
              *
@@ -635,19 +635,19 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * <em>
              * (The remote method definition does not provide any description.
-             * This usually means the response is a `Mstusers` object.)
+             * This usually means the response is a `MstUsers` object.)
              * </em>
              */
             "find": {
               isArray: true,
-              url: urlBase + "/Mstusers",
+              url: urlBase + "/MstUsers",
               method: "GET",
             },
 
             /**
              * @ngdoc method
-             * @name lbServices.Mstusers#findOne
-             * @methodOf lbServices.Mstusers
+             * @name lbServices.MstUsers#findOne
+             * @methodOf lbServices.MstUsers
              *
              * @description
              *
@@ -669,18 +669,18 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * <em>
              * (The remote method definition does not provide any description.
-             * This usually means the response is a `Mstusers` object.)
+             * This usually means the response is a `MstUsers` object.)
              * </em>
              */
             "findOne": {
-              url: urlBase + "/Mstusers/findOne",
+              url: urlBase + "/MstUsers/findOne",
               method: "GET",
             },
 
             /**
              * @ngdoc method
-             * @name lbServices.Mstusers#updateAll
-             * @methodOf lbServices.Mstusers
+             * @name lbServices.MstUsers#updateAll
+             * @methodOf lbServices.MstUsers
              *
              * @description
              *
@@ -707,14 +707,14 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              * Information related to the outcome of the operation
              */
             "updateAll": {
-              url: urlBase + "/Mstusers/update",
+              url: urlBase + "/MstUsers/update",
               method: "POST",
             },
 
             /**
              * @ngdoc method
-             * @name lbServices.Mstusers#deleteById
-             * @methodOf lbServices.Mstusers
+             * @name lbServices.MstUsers#deleteById
+             * @methodOf lbServices.MstUsers
              *
              * @description
              *
@@ -736,18 +736,18 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * <em>
              * (The remote method definition does not provide any description.
-             * This usually means the response is a `Mstusers` object.)
+             * This usually means the response is a `MstUsers` object.)
              * </em>
              */
             "deleteById": {
-              url: urlBase + "/Mstusers/:id",
+              url: urlBase + "/MstUsers/:id",
               method: "DELETE",
             },
 
             /**
              * @ngdoc method
-             * @name lbServices.Mstusers#count
-             * @methodOf lbServices.Mstusers
+             * @name lbServices.MstUsers#count
+             * @methodOf lbServices.MstUsers
              *
              * @description
              *
@@ -772,14 +772,14 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *  - `count` – `{number=}` -
              */
             "count": {
-              url: urlBase + "/Mstusers/count",
+              url: urlBase + "/MstUsers/count",
               method: "GET",
             },
 
             /**
              * @ngdoc method
-             * @name lbServices.Mstusers#prototype$updateAttributes
-             * @methodOf lbServices.Mstusers
+             * @name lbServices.MstUsers#prototype$updateAttributes
+             * @methodOf lbServices.MstUsers
              *
              * @description
              *
@@ -787,7 +787,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - Mstusers id
+             *  - `id` – `{*}` - MstUsers id
              *
              * @param {Object} postData Request data.
              *
@@ -805,18 +805,18 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * <em>
              * (The remote method definition does not provide any description.
-             * This usually means the response is a `Mstusers` object.)
+             * This usually means the response is a `MstUsers` object.)
              * </em>
              */
             "prototype$updateAttributes": {
-              url: urlBase + "/Mstusers/:id",
+              url: urlBase + "/MstUsers/:id",
               method: "PUT",
             },
 
             /**
              * @ngdoc method
-             * @name lbServices.Mstusers#createChangeStream
-             * @methodOf lbServices.Mstusers
+             * @name lbServices.MstUsers#createChangeStream
+             * @methodOf lbServices.MstUsers
              *
              * @description
              *
@@ -846,14 +846,14 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *  - `changes` – `{ReadableStream=}` -
              */
             "createChangeStream": {
-              url: urlBase + "/Mstusers/change-stream",
+              url: urlBase + "/MstUsers/change-stream",
               method: "POST",
             },
 
             /**
              * @ngdoc method
-             * @name lbServices.Mstusers#login
-             * @methodOf lbServices.Mstusers
+             * @name lbServices.MstUsers#login
+             * @methodOf lbServices.MstUsers
              *
              * @description
              *
@@ -902,14 +902,14 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
                   return response.resource;
                 },
               },
-              url: urlBase + "/Mstusers/login",
+              url: urlBase + "/MstUsers/login",
               method: "POST",
             },
 
             /**
              * @ngdoc method
-             * @name lbServices.Mstusers#logout
-             * @methodOf lbServices.Mstusers
+             * @name lbServices.MstUsers#logout
+             * @methodOf lbServices.MstUsers
              *
              * @description
              *
@@ -949,14 +949,14 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
                   return responseError.resource;
                 },
               },
-              url: urlBase + "/Mstusers/logout",
+              url: urlBase + "/MstUsers/logout",
               method: "POST",
             },
 
             /**
              * @ngdoc method
-             * @name lbServices.Mstusers#confirm
-             * @methodOf lbServices.Mstusers
+             * @name lbServices.MstUsers#confirm
+             * @methodOf lbServices.MstUsers
              *
              * @description
              *
@@ -983,14 +983,14 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              * This method returns no data.
              */
             "confirm": {
-              url: urlBase + "/Mstusers/confirm",
+              url: urlBase + "/MstUsers/confirm",
               method: "GET",
             },
 
             /**
              * @ngdoc method
-             * @name lbServices.Mstusers#resetPassword
-             * @methodOf lbServices.Mstusers
+             * @name lbServices.MstUsers#resetPassword
+             * @methodOf lbServices.MstUsers
              *
              * @description
              *
@@ -1018,14 +1018,94 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              * This method returns no data.
              */
             "resetPassword": {
-              url: urlBase + "/Mstusers/reset",
+              url: urlBase + "/MstUsers/reset",
               method: "POST",
             },
 
             /**
              * @ngdoc method
-             * @name lbServices.Mstusers#getCurrent
-             * @methodOf lbServices.Mstusers
+             * @name lbServices.MstUsers#sendEmail
+             * @methodOf lbServices.MstUsers
+             *
+             * @description
+             *
+             * <em>
+             * (The remote method definition does not provide any description.)
+             * </em>
+             *
+             * @param {Object=} parameters Request parameters.
+             *
+             *   This method does not accept any parameters.
+             *   Supply an empty object or omit this argument altogether.
+             *
+             * @param {Object} postData Request data.
+             *
+             *  - `obj` – `{string}` -
+             *
+             * @param {function(Object,Object)=} successCb
+             *   Success callback with two arguments: `value`, `responseHeaders`.
+             *
+             * @param {function(Object)=} errorCb Error callback with one argument:
+             *   `httpResponse`.
+             *
+             * @returns {Object} An empty reference that will be
+             *   populated with the actual data once the response is returned
+             *   from the server.
+             *
+             * <em>
+             * (The remote method definition does not provide any description.
+             * This usually means the response is a `MstUsers` object.)
+             * </em>
+             */
+            "sendEmail": {
+              url: urlBase + "/MstUsers/sendEmail",
+              method: "POST",
+            },
+
+            /**
+             * @ngdoc method
+             * @name lbServices.MstUsers#sendOTP
+             * @methodOf lbServices.MstUsers
+             *
+             * @description
+             *
+             * <em>
+             * (The remote method definition does not provide any description.)
+             * </em>
+             *
+             * @param {Object=} parameters Request parameters.
+             *
+             *   This method does not accept any parameters.
+             *   Supply an empty object or omit this argument altogether.
+             *
+             * @param {Object} postData Request data.
+             *
+             *  - `obj` – `{string}` -
+             *
+             * @param {function(Object,Object)=} successCb
+             *   Success callback with two arguments: `value`, `responseHeaders`.
+             *
+             * @param {function(Object)=} errorCb Error callback with one argument:
+             *   `httpResponse`.
+             *
+             * @returns {Object} An empty reference that will be
+             *   populated with the actual data once the response is returned
+             *   from the server.
+             *
+             * <em>
+             * (The remote method definition does not provide any description.
+             * This usually means the response is a `MstUsers` object.)
+             * </em>
+             */
+            "sendOTP": {
+              url: urlBase + "/MstUsers/sendOTP",
+              method: "POST",
+            },
+
+            /**
+             * @ngdoc method
+             * @name lbServices.MstUsers#getCurrent
+             * @methodOf lbServices.MstUsers
              *
              * @description
              *
@@ -1043,7 +1123,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *   from the server.
              */
             'getCurrent': {
-              url: urlBase + "/Mstusers" + '/:id',
+              url: urlBase + "/MstUsers" + '/:id',
               method: 'GET',
               params: {
                 id: function() {
@@ -1072,8 +1152,8 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
 
             /**
              * @ngdoc method
-             * @name lbServices.Mstusers#patchOrCreate
-             * @methodOf lbServices.Mstusers
+             * @name lbServices.MstUsers#patchOrCreate
+             * @methodOf lbServices.MstUsers
              *
              * @description
              *
@@ -1100,15 +1180,15 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * <em>
              * (The remote method definition does not provide any description.
-             * This usually means the response is a `Mstusers` object.)
+             * This usually means the response is a `MstUsers` object.)
              * </em>
              */
         R["patchOrCreate"] = R["upsert"];
 
             /**
              * @ngdoc method
-             * @name lbServices.Mstusers#updateOrCreate
-             * @methodOf lbServices.Mstusers
+             * @name lbServices.MstUsers#updateOrCreate
+             * @methodOf lbServices.MstUsers
              *
              * @description
              *
@@ -1135,15 +1215,15 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * <em>
              * (The remote method definition does not provide any description.
-             * This usually means the response is a `Mstusers` object.)
+             * This usually means the response is a `MstUsers` object.)
              * </em>
              */
         R["updateOrCreate"] = R["upsert"];
 
             /**
              * @ngdoc method
-             * @name lbServices.Mstusers#patchOrCreateWithWhere
-             * @methodOf lbServices.Mstusers
+             * @name lbServices.MstUsers#patchOrCreateWithWhere
+             * @methodOf lbServices.MstUsers
              *
              * @description
              *
@@ -1169,15 +1249,15 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * <em>
              * (The remote method definition does not provide any description.
-             * This usually means the response is a `Mstusers` object.)
+             * This usually means the response is a `MstUsers` object.)
              * </em>
              */
         R["patchOrCreateWithWhere"] = R["upsertWithWhere"];
 
             /**
              * @ngdoc method
-             * @name lbServices.Mstusers#update
-             * @methodOf lbServices.Mstusers
+             * @name lbServices.MstUsers#update
+             * @methodOf lbServices.MstUsers
              *
              * @description
              *
@@ -1207,8 +1287,8 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
 
             /**
              * @ngdoc method
-             * @name lbServices.Mstusers#destroyById
-             * @methodOf lbServices.Mstusers
+             * @name lbServices.MstUsers#destroyById
+             * @methodOf lbServices.MstUsers
              *
              * @description
              *
@@ -1230,15 +1310,15 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * <em>
              * (The remote method definition does not provide any description.
-             * This usually means the response is a `Mstusers` object.)
+             * This usually means the response is a `MstUsers` object.)
              * </em>
              */
         R["destroyById"] = R["deleteById"];
 
             /**
              * @ngdoc method
-             * @name lbServices.Mstusers#removeById
-             * @methodOf lbServices.Mstusers
+             * @name lbServices.MstUsers#removeById
+             * @methodOf lbServices.MstUsers
              *
              * @description
              *
@@ -1260,15 +1340,15 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * <em>
              * (The remote method definition does not provide any description.
-             * This usually means the response is a `Mstusers` object.)
+             * This usually means the response is a `MstUsers` object.)
              * </em>
              */
         R["removeById"] = R["deleteById"];
 
             /**
              * @ngdoc method
-             * @name lbServices.Mstusers#patchAttributes
-             * @methodOf lbServices.Mstusers
+             * @name lbServices.MstUsers#patchAttributes
+             * @methodOf lbServices.MstUsers
              *
              * @description
              *
@@ -1276,7 +1356,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - Mstusers id
+             *  - `id` – `{*}` - MstUsers id
              *
              * @param {Object} postData Request data.
              *
@@ -1294,25 +1374,25 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * <em>
              * (The remote method definition does not provide any description.
-             * This usually means the response is a `Mstusers` object.)
+             * This usually means the response is a `MstUsers` object.)
              * </em>
              */
         R["patchAttributes"] = R["prototype$updateAttributes"];
 
         /**
          * @ngdoc method
-         * @name lbServices.Mstusers#getCachedCurrent
-         * @methodOf lbServices.Mstusers
+         * @name lbServices.MstUsers#getCachedCurrent
+         * @methodOf lbServices.MstUsers
          *
          * @description
          *
          * Get data of the currently logged user that was returned by the last
-         * call to {@link lbServices.Mstusers#login} or
-         * {@link lbServices.Mstusers#getCurrent}. Return null when there
+         * call to {@link lbServices.MstUsers#login} or
+         * {@link lbServices.MstUsers#getCurrent}. Return null when there
          * is no user logged in or the data of the current user were not fetched
          * yet.
          *
-         * @returns {Object} A Mstusers instance.
+         * @returns {Object} A MstUsers instance.
          */
         R.getCachedCurrent = function() {
           var data = LoopBackAuth.currentUserData;
@@ -1321,8 +1401,8 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
 
         /**
          * @ngdoc method
-         * @name lbServices.Mstusers#isAuthenticated
-         * @methodOf lbServices.Mstusers
+         * @name lbServices.MstUsers#isAuthenticated
+         * @methodOf lbServices.MstUsers
          *
          * @returns {boolean} True if the current user is authenticated (logged in).
          */
@@ -1332,8 +1412,8 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
 
         /**
          * @ngdoc method
-         * @name lbServices.Mstusers#getCurrentId
-         * @methodOf lbServices.Mstusers
+         * @name lbServices.MstUsers#getCurrentId
+         * @methodOf lbServices.MstUsers
          *
          * @returns {Object} Id of the currently logged-in user or null.
          */
@@ -1343,13 +1423,13 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
 
         /**
         * @ngdoc property
-        * @name lbServices.Mstusers#modelName
-        * @propertyOf lbServices.Mstusers
+        * @name lbServices.MstUsers#modelName
+        * @propertyOf lbServices.MstUsers
         * @description
         * The name of the model represented by this $resource,
-        * i.e. `Mstusers`.
+        * i.e. `MstUsers`.
         */
-        R.modelName = "Mstusers";
+        R.modelName = "MstUsers";
 
 
 
@@ -1358,13 +1438,13 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
 
 /**
  * @ngdoc object
- * @name lbServices.Mstrole
- * @header lbServices.Mstrole
+ * @name lbServices.MstLog
+ * @header lbServices.MstLog
  * @object
  *
  * @description
  *
- * A $resource object for interacting with the `Mstrole` model.
+ * A $resource object for interacting with the `MstLog` model.
  *
  * ## Example
  *
@@ -1374,19 +1454,19 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
  *
  */
   module.factory(
-    "Mstrole",
+    "MstLog",
     [
       'LoopBackResource', 'LoopBackAuth', '$injector', '$q',
       function(LoopBackResource, LoopBackAuth, $injector, $q) {
         var R = LoopBackResource(
-        urlBase + "/Mstroles/:id",
+        urlBase + "/MstLogs/:id",
           { 'id': '@id' },
           {
 
             /**
              * @ngdoc method
-             * @name lbServices.Mstrole#create
-             * @methodOf lbServices.Mstrole
+             * @name lbServices.MstLog#create
+             * @methodOf lbServices.MstLog
              *
              * @description
              *
@@ -1413,18 +1493,18 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * <em>
              * (The remote method definition does not provide any description.
-             * This usually means the response is a `Mstrole` object.)
+             * This usually means the response is a `MstLog` object.)
              * </em>
              */
             "create": {
-              url: urlBase + "/Mstroles",
+              url: urlBase + "/MstLogs",
               method: "POST",
             },
 
             /**
              * @ngdoc method
-             * @name lbServices.Mstrole#createMany
-             * @methodOf lbServices.Mstrole
+             * @name lbServices.MstLog#createMany
+             * @methodOf lbServices.MstLog
              *
              * @description
              *
@@ -1451,19 +1531,19 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * <em>
              * (The remote method definition does not provide any description.
-             * This usually means the response is a `Mstrole` object.)
+             * This usually means the response is a `MstLog` object.)
              * </em>
              */
             "createMany": {
               isArray: true,
-              url: urlBase + "/Mstroles",
+              url: urlBase + "/MstLogs",
               method: "POST",
             },
 
             /**
              * @ngdoc method
-             * @name lbServices.Mstrole#upsert
-             * @methodOf lbServices.Mstrole
+             * @name lbServices.MstLog#upsert
+             * @methodOf lbServices.MstLog
              *
              * @description
              *
@@ -1490,18 +1570,18 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * <em>
              * (The remote method definition does not provide any description.
-             * This usually means the response is a `Mstrole` object.)
+             * This usually means the response is a `MstLog` object.)
              * </em>
              */
             "upsert": {
-              url: urlBase + "/Mstroles",
+              url: urlBase + "/MstLogs",
               method: "PUT",
             },
 
             /**
              * @ngdoc method
-             * @name lbServices.Mstrole#replaceOrCreate
-             * @methodOf lbServices.Mstrole
+             * @name lbServices.MstLog#replaceOrCreate
+             * @methodOf lbServices.MstLog
              *
              * @description
              *
@@ -1528,18 +1608,18 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * <em>
              * (The remote method definition does not provide any description.
-             * This usually means the response is a `Mstrole` object.)
+             * This usually means the response is a `MstLog` object.)
              * </em>
              */
             "replaceOrCreate": {
-              url: urlBase + "/Mstroles/replaceOrCreate",
+              url: urlBase + "/MstLogs/replaceOrCreate",
               method: "POST",
             },
 
             /**
              * @ngdoc method
-             * @name lbServices.Mstrole#upsertWithWhere
-             * @methodOf lbServices.Mstrole
+             * @name lbServices.MstLog#upsertWithWhere
+             * @methodOf lbServices.MstLog
              *
              * @description
              *
@@ -1565,18 +1645,18 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * <em>
              * (The remote method definition does not provide any description.
-             * This usually means the response is a `Mstrole` object.)
+             * This usually means the response is a `MstLog` object.)
              * </em>
              */
             "upsertWithWhere": {
-              url: urlBase + "/Mstroles/upsertWithWhere",
+              url: urlBase + "/MstLogs/upsertWithWhere",
               method: "POST",
             },
 
             /**
              * @ngdoc method
-             * @name lbServices.Mstrole#exists
-             * @methodOf lbServices.Mstrole
+             * @name lbServices.MstLog#exists
+             * @methodOf lbServices.MstLog
              *
              * @description
              *
@@ -1601,14 +1681,14 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *  - `exists` – `{boolean=}` -
              */
             "exists": {
-              url: urlBase + "/Mstroles/:id/exists",
+              url: urlBase + "/MstLogs/:id/exists",
               method: "GET",
             },
 
             /**
              * @ngdoc method
-             * @name lbServices.Mstrole#findById
-             * @methodOf lbServices.Mstrole
+             * @name lbServices.MstLog#findById
+             * @methodOf lbServices.MstLog
              *
              * @description
              *
@@ -1632,18 +1712,18 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * <em>
              * (The remote method definition does not provide any description.
-             * This usually means the response is a `Mstrole` object.)
+             * This usually means the response is a `MstLog` object.)
              * </em>
              */
             "findById": {
-              url: urlBase + "/Mstroles/:id",
+              url: urlBase + "/MstLogs/:id",
               method: "GET",
             },
 
             /**
              * @ngdoc method
-             * @name lbServices.Mstrole#replaceById
-             * @methodOf lbServices.Mstrole
+             * @name lbServices.MstLog#replaceById
+             * @methodOf lbServices.MstLog
              *
              * @description
              *
@@ -1669,18 +1749,18 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * <em>
              * (The remote method definition does not provide any description.
-             * This usually means the response is a `Mstrole` object.)
+             * This usually means the response is a `MstLog` object.)
              * </em>
              */
             "replaceById": {
-              url: urlBase + "/Mstroles/:id/replace",
+              url: urlBase + "/MstLogs/:id/replace",
               method: "POST",
             },
 
             /**
              * @ngdoc method
-             * @name lbServices.Mstrole#find
-             * @methodOf lbServices.Mstrole
+             * @name lbServices.MstLog#find
+             * @methodOf lbServices.MstLog
              *
              * @description
              *
@@ -1702,19 +1782,19 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * <em>
              * (The remote method definition does not provide any description.
-             * This usually means the response is a `Mstrole` object.)
+             * This usually means the response is a `MstLog` object.)
              * </em>
              */
             "find": {
               isArray: true,
-              url: urlBase + "/Mstroles",
+              url: urlBase + "/MstLogs",
               method: "GET",
             },
 
             /**
              * @ngdoc method
-             * @name lbServices.Mstrole#findOne
-             * @methodOf lbServices.Mstrole
+             * @name lbServices.MstLog#findOne
+             * @methodOf lbServices.MstLog
              *
              * @description
              *
@@ -1736,18 +1816,18 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * <em>
              * (The remote method definition does not provide any description.
-             * This usually means the response is a `Mstrole` object.)
+             * This usually means the response is a `MstLog` object.)
              * </em>
              */
             "findOne": {
-              url: urlBase + "/Mstroles/findOne",
+              url: urlBase + "/MstLogs/findOne",
               method: "GET",
             },
 
             /**
              * @ngdoc method
-             * @name lbServices.Mstrole#updateAll
-             * @methodOf lbServices.Mstrole
+             * @name lbServices.MstLog#updateAll
+             * @methodOf lbServices.MstLog
              *
              * @description
              *
@@ -1774,14 +1854,14 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              * Information related to the outcome of the operation
              */
             "updateAll": {
-              url: urlBase + "/Mstroles/update",
+              url: urlBase + "/MstLogs/update",
               method: "POST",
             },
 
             /**
              * @ngdoc method
-             * @name lbServices.Mstrole#deleteById
-             * @methodOf lbServices.Mstrole
+             * @name lbServices.MstLog#deleteById
+             * @methodOf lbServices.MstLog
              *
              * @description
              *
@@ -1803,18 +1883,18 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * <em>
              * (The remote method definition does not provide any description.
-             * This usually means the response is a `Mstrole` object.)
+             * This usually means the response is a `MstLog` object.)
              * </em>
              */
             "deleteById": {
-              url: urlBase + "/Mstroles/:id",
+              url: urlBase + "/MstLogs/:id",
               method: "DELETE",
             },
 
             /**
              * @ngdoc method
-             * @name lbServices.Mstrole#count
-             * @methodOf lbServices.Mstrole
+             * @name lbServices.MstLog#count
+             * @methodOf lbServices.MstLog
              *
              * @description
              *
@@ -1839,14 +1919,14 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *  - `count` – `{number=}` -
              */
             "count": {
-              url: urlBase + "/Mstroles/count",
+              url: urlBase + "/MstLogs/count",
               method: "GET",
             },
 
             /**
              * @ngdoc method
-             * @name lbServices.Mstrole#prototype$updateAttributes
-             * @methodOf lbServices.Mstrole
+             * @name lbServices.MstLog#prototype$updateAttributes
+             * @methodOf lbServices.MstLog
              *
              * @description
              *
@@ -1854,7 +1934,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - Mstrole id
+             *  - `id` – `{*}` - MstLog id
              *
              * @param {Object} postData Request data.
              *
@@ -1872,18 +1952,18 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * <em>
              * (The remote method definition does not provide any description.
-             * This usually means the response is a `Mstrole` object.)
+             * This usually means the response is a `MstLog` object.)
              * </em>
              */
             "prototype$updateAttributes": {
-              url: urlBase + "/Mstroles/:id",
+              url: urlBase + "/MstLogs/:id",
               method: "PUT",
             },
 
             /**
              * @ngdoc method
-             * @name lbServices.Mstrole#createChangeStream
-             * @methodOf lbServices.Mstrole
+             * @name lbServices.MstLog#createChangeStream
+             * @methodOf lbServices.MstLog
              *
              * @description
              *
@@ -1913,7 +1993,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *  - `changes` – `{ReadableStream=}` -
              */
             "createChangeStream": {
-              url: urlBase + "/Mstroles/change-stream",
+              url: urlBase + "/MstLogs/change-stream",
               method: "POST",
             },
           }
@@ -1923,8 +2003,8 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
 
             /**
              * @ngdoc method
-             * @name lbServices.Mstrole#patchOrCreate
-             * @methodOf lbServices.Mstrole
+             * @name lbServices.MstLog#patchOrCreate
+             * @methodOf lbServices.MstLog
              *
              * @description
              *
@@ -1951,15 +2031,15 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * <em>
              * (The remote method definition does not provide any description.
-             * This usually means the response is a `Mstrole` object.)
+             * This usually means the response is a `MstLog` object.)
              * </em>
              */
         R["patchOrCreate"] = R["upsert"];
 
             /**
              * @ngdoc method
-             * @name lbServices.Mstrole#updateOrCreate
-             * @methodOf lbServices.Mstrole
+             * @name lbServices.MstLog#updateOrCreate
+             * @methodOf lbServices.MstLog
              *
              * @description
              *
@@ -1986,15 +2066,15 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * <em>
              * (The remote method definition does not provide any description.
-             * This usually means the response is a `Mstrole` object.)
+             * This usually means the response is a `MstLog` object.)
              * </em>
              */
         R["updateOrCreate"] = R["upsert"];
 
             /**
              * @ngdoc method
-             * @name lbServices.Mstrole#patchOrCreateWithWhere
-             * @methodOf lbServices.Mstrole
+             * @name lbServices.MstLog#patchOrCreateWithWhere
+             * @methodOf lbServices.MstLog
              *
              * @description
              *
@@ -2020,15 +2100,15 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * <em>
              * (The remote method definition does not provide any description.
-             * This usually means the response is a `Mstrole` object.)
+             * This usually means the response is a `MstLog` object.)
              * </em>
              */
         R["patchOrCreateWithWhere"] = R["upsertWithWhere"];
 
             /**
              * @ngdoc method
-             * @name lbServices.Mstrole#update
-             * @methodOf lbServices.Mstrole
+             * @name lbServices.MstLog#update
+             * @methodOf lbServices.MstLog
              *
              * @description
              *
@@ -2058,8 +2138,8 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
 
             /**
              * @ngdoc method
-             * @name lbServices.Mstrole#destroyById
-             * @methodOf lbServices.Mstrole
+             * @name lbServices.MstLog#destroyById
+             * @methodOf lbServices.MstLog
              *
              * @description
              *
@@ -2081,15 +2161,15 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * <em>
              * (The remote method definition does not provide any description.
-             * This usually means the response is a `Mstrole` object.)
+             * This usually means the response is a `MstLog` object.)
              * </em>
              */
         R["destroyById"] = R["deleteById"];
 
             /**
              * @ngdoc method
-             * @name lbServices.Mstrole#removeById
-             * @methodOf lbServices.Mstrole
+             * @name lbServices.MstLog#removeById
+             * @methodOf lbServices.MstLog
              *
              * @description
              *
@@ -2111,15 +2191,15 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * <em>
              * (The remote method definition does not provide any description.
-             * This usually means the response is a `Mstrole` object.)
+             * This usually means the response is a `MstLog` object.)
              * </em>
              */
         R["removeById"] = R["deleteById"];
 
             /**
              * @ngdoc method
-             * @name lbServices.Mstrole#patchAttributes
-             * @methodOf lbServices.Mstrole
+             * @name lbServices.MstLog#patchAttributes
+             * @methodOf lbServices.MstLog
              *
              * @description
              *
@@ -2127,7 +2207,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * @param {Object=} parameters Request parameters.
              *
-             *  - `id` – `{*}` - Mstrole id
+             *  - `id` – `{*}` - MstLog id
              *
              * @param {Object} postData Request data.
              *
@@ -2145,7 +2225,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
              *
              * <em>
              * (The remote method definition does not provide any description.
-             * This usually means the response is a `Mstrole` object.)
+             * This usually means the response is a `MstLog` object.)
              * </em>
              */
         R["patchAttributes"] = R["prototype$updateAttributes"];
@@ -2153,13 +2233,13 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' &&
 
         /**
         * @ngdoc property
-        * @name lbServices.Mstrole#modelName
-        * @propertyOf lbServices.Mstrole
+        * @name lbServices.MstLog#modelName
+        * @propertyOf lbServices.MstLog
         * @description
         * The name of the model represented by this $resource,
-        * i.e. `Mstrole`.
+        * i.e. `MstLog`.
         */
-        R.modelName = "Mstrole";
+        R.modelName = "MstLog";
 
 
 

@@ -1,8 +1,30 @@
-<ion-view id="Home" hide-nav-bar="true">
-    <ion-header-bar class="bar-dark" >
-      <h1 class="title">Room Budget Manager</h1>
-    </ion-header-bar>
-    <ion-content padding="true" scroll="false">
+<ion-view  id="Home">
+  
+ <ion-header-bar align-title="center">
+	  <button class="button button-icon button-light ion-navicon" ng-click="toggleLeft()"></button>
+	  <h1 class="title">Budget Manager</h1>
+	  
+	  <!-- Button on right side if any use -->
+	   <button class="button button-icon button-light ion-log-out" ng-click="logout()"></button>
 
-    </ion-content>
+ </ion-header-bar>
+ <!-- <ion-content padding="true" scroll="false">
+
+   <div style="text-align: center;height: 100px">
+   		 <div><img src="./img/ben.png" style="width: 100px;height: 100px"></div>
+   		 <div><label>Total Expenses : 20000</label></div>
+   		 <div><label>Total Income : 20000</label></div>
+   </div>
+ 
+
+ </ion-content> -->
+ <ion-content>
+ <br />
+ <div style="text-align: center;height: 100px">
+   		 <div><img src="./img/ben.png" style="width: 100px;height: 100px"></div>
+   		 <div><label>Total Expenses : 20000</label></div>
+   		 <div><label>Total Income : 20000</label></div>
+   </div>
+   
+ </ion-content>
 </ion-view>

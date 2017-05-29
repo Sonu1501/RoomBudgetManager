@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+    <meta http-equiv="Content-Security-Policy" content="default-src *; script-src 'self' 'unsafe-inline' 'unsafe-eval' *; style-src  'self' 'unsafe-inline' *">
     <title></title>
 
     <style>
@@ -12,29 +13,28 @@
       }
     </style>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/ionicons.min.css">
     <link href="lib/ionic/css/ionic.css" rel="stylesheet">
     <script src="lib/ionic/js/ionic.bundle.js"></script>
+    
+    <script src="js/ng-cordova.min.js"></script>
+    <script src="cordova.js"></script>
 
-
-    <link href="http://code.ionicframework.com/ionicons/1.5.2/css/ionicons.min.css" rel="stylesheet">
-
-    <!-- IF using Sass (run gulp sass first), then uncomment below and remove the CSS includes above
-    <link href="css/ionic.app.css" rel="stylesheet">
-    -->
 
     <script src="js/app.js"></script>
     <script src="js/controllers.js"></script>
     <script src="js/routes.js"></script>
     <script src="js/services.js"></script>
     <script src="js/directives.js"></script>
-	<script src="scripts/lb-services.js"></script>
-
-<script src="scripts/ng-resource.js"></script>
+	  <script src="scripts/lb-services.js"></script>
+    <script src="scripts/ng-resource.js"></script>
+    <script src="scripts/ngStorage.js"></script>
 
   </head>
   <body ng-app="app" animation="slide-left-right-ios7">
   <div>
     <div>
+  
       <ion-nav-view>
           <!-- Start the login page and append here -->
       </ion-nav-view>
